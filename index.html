@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Boemi Pangkey - Pengembang Web Pemula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        .typing {
+            border-right: 2px solid #667eea;
+            animation: blink 1s infinite step-end;
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #667eea; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-800">Boemi Pangkey</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-blue-500">Beranda</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-blue-500">Tentang</a></li>
+                <li><a href="#skills" class="text-gray-600 hover:text-blue-500">Keterampilan</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-blue-500">Proyek</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold text-white mb-4">Selamat Datang di Portfolio Saya</h1>
+            <p class="text-xl text-white mb-8 typing">Pengembang Web Pemula yang Penuh Semangat</p>
+            <img src="WhatsApp Image 2025-09-04 at 11.02.30.jpeg" alt="Portrait of a 14-year-old Indonesian boy named Boemi Pangkey, with short black hair, wearing a blue t-shirt, smiling confidently in front of a computer screen displaying web code, in a bright room with posters of technology themes on the wall, captured in a frontal view with natural lighting" class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg border-4 border-white">
+            <div class="mt-8">
+                <a href="#about" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Tentang Saya</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <img src="WhatsApp Image 2025-09-04 at 11.03.10.jpeg" alt="A young Indonesian teenager working on a laptop in a cozy home office, with shelves full of books on programming and design, a cup of coffee beside him, and soft warm lighting from a window, looking focused on the screen displaying colorful UI designs and code snippets" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Biografi</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Halo saya Boemi Pangkey seorang pengembang web pemula dengan pengalaman 1 bulan, saya suka pengembangan web di umur saya yang ke 14 tahun. Saya sangat tertarik dengan UI Design, AI, IOT, saya selalu siap untuk mempelajari hal baru.
+                    </p>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Meskipun baru memulai perjalanan saya sebagai pengembang web, saya telah belajar banyak tentang HTML, CSS, dan JavaScript. Saya senang bereksperimen dengan desain antarmuka yang inovatif dan mencari cara baru untuk mengintegrasikan kecerdasan buatan serta internet of things dalam proyek-proyek sederhana. Saya percaya bahwa belajar adalah proses yang berkelanjutan, dan saya selalu mencari tantangan baru untuk meningkatkan kemampuan saya.
+                    </p>
+                    <div class="mt-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Umur: 14 tahun</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm ml-2">Pengalaman: 1 bulan</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm ml-2">Minat: UI Design, AI, IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Keterampilan Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16b517dc-6d4d-44ef-9555-f349eff1b88d.png" alt="Red icon representing HTML programming language, with angle brackets and text 'HTML' in white, on a white background" class="w-16 h-16 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-center mb-2">HTML</h3>
+                    <p class="text-gray-600 text-center">Dasar untuk membangun struktur web.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/523472bb-1134-4f38-9ebc-92ea53c79a85.png" alt="Blue icon representing CSS styling language, with curly braces and text 'CSS' in white, on a white background" class="w-16 h-16 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-center mb-2">CSS & TailwindCSS</h3>
+                    <p class="text-gray-600 text-center">Untuk desain antarmuka yang menarik dan responsif.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b94e3ec-837d-493a-950e-ca692845158a.png" alt="Yellow icon representing JavaScript programming language, with script symbols and text 'JS' in white, on a white background" class="w-16 h-16 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-center mb-2">JavaScript</h3>
+                    <p class="text-gray-600 text-center">Menambahkan interaktivitas dan logika pada web.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7489cc9a-726c-4dda-be23-d2d4bd862865.png" alt="Purple icon representing UI Design creativity, with brush and layout shapes in white, on a white background" class="w-16 h-16 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-center mb-2">UI Design</h3>
+                    <p class="text-gray-600 text-center">Merancang pengalaman pengguna yang intuitif.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b4f95ef-0aaa-4806-b224-e7bb14743d89.png" alt="Cyan icon representing Artificial Intelligence concept, with brain and circuit patterns in white, on a white background" class="w-16 h-16 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-center mb-2">AI</h3>
+                    <p class="text-gray-600 text-center">Eksplorasi kecerdasan buatan di aplikasi web.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-lg shadow-md transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ce776721-7d3f-436d-a55d-2acd921ebf38.png" alt="Green icon representing Internet of Things connectivity, with interconnected devices and text 'IoT' in white, on a white background" class="w-16 h-16 mx-auto mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-center mb-2">IoT</h3>
+                    <p class="text-gray-600 text-center">Konektivitas perangkat untuk proyek inovatif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Hubungi Saya</h2>
+            <div class="max-w-md mx-auto">
+                <form class="bg-white p-8 rounded-lg shadow-md" action="#" method="post">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2" for="name">Nama</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded" type="text" id="name" name="name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <input class="w-full px-3 py-2 border border-gray-300 rounded" type="email" id="email" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2" for="message">Pesan</label>
+                        <textarea class="w-full px-3 py-2 border border-gray-300 rounded" id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" type="submit">Kirim</button>
+                </form>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-gray-600">Email: boemi.pangkey@example.com</p>
+                <p class="text-gray-600">GitHub: <a href="#" class="text-blue-500 hover:underline">github.com/boemipangkey</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2023 Boemi Pangkey. Dibuat dengan passion untuk pembelajaran.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+
